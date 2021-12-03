@@ -16,10 +16,10 @@ export default function Contact() {
                         <div className="flex flex-col">
                             {
                                 social.map((social) => (
-                                    <div className="flex flex-row border-2 border-gray-300 rounded bg-gray-200 p-2 hover:bg-gray-300 hover:border-gray-400 mb-4 shadow-lg" key={social.id}>
+                                    <a href={social.link} target="_blank" rel="noreferrer" className="flex flex-row border-2 border-gray-300 rounded bg-gray-200 p-2 hover:bg-gray-300 hover:border-gray-400 mb-4 shadow-lg" key={social.id}>
                                         <img src={social.icon} alt={social.name} className="h-1/12 w-1/12 ml-2" />
                                         <p className="ml-2 text-green-900">{social.name}</p>
-                                    </div>
+                                    </a>
                                 ))
                             }
                         </div>

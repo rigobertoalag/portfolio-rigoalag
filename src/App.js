@@ -5,6 +5,7 @@ import Experience from './components/Experience.js'
 import Portfolio from './components/Portfolio.js'
 import Contact from './components/Contact.js'
 import Courses from './components/Courses.js'
+import Cover from './components/Cover.js'
 
 function App() {
   const topRef = useRef()
@@ -45,8 +46,8 @@ function App() {
         </div>
       </div>
 
-      <div className="h-1/2 bg-white pt-12" ref={topRef}>
-        <p className="text-green-600 text-xl">Aqui va la portada</p>
+      <div className="h-3/4 bg-white pt-12" ref={topRef}>
+        <Cover />
       </div>
 
       <div ref={resumeRef}>
