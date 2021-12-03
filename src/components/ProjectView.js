@@ -40,7 +40,7 @@ export default function ProjectView({ project }) {
                             </div>
                             <div className="flex flex-col w-1/2 h-full items-center mt-4">
                                 <div className=" w-4/5 h-full">
-                                    <img src={process.env.PUBLIC_URL + p.img} alt="test" className="w-full my-4" />
+                                    <img src={p.img} alt="test" className="w-full my-4" />
                                 </div>
                                 <div className="flex flex-row">
                                     {
