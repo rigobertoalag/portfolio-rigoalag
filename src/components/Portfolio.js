@@ -1,27 +1,31 @@
+import { useState } from 'react'
+import ProjectView from '../components/ProjectView'
+import projects from '../json/projects.js'
+
 export default function Portfolio() {
+    const [project, setProject] = useState(1)
     return (
-        <div className="h-96 w-full bg-blue-400 flex flex-row">
-            <div className="w-1/5 flex flex-col items-center justify-center">
-                <div className="h-1/6 w-full bg-white flex items-center justify-center">
-                    <p>hola1</p>
-                </div>
-                <div className="h-1/6 w-full bg-white flex items-center justify-center">
-                    <p>hola1</p>
-                </div>
-                <div className="h-1/6 w-full bg-white flex items-center justify-center">
-                    <p>hola1</p>
-                </div>
-                <div className="h-1/6 w-full bg-white flex items-center justify-center">
-                    <p>hola1</p>
-                </div>
+        <div className="bg-gray-100 w-full">
+            <div className="flex justify-center py-10 text-4xl font-bold">
+                <p className="text-green-600">Proyectos - Portafolio</p>
             </div>
-
-            <div className="w-4/5">
-                <div className="bg-gray-300 h-full">
-                    <p>hola2</p>
+            <div className="w-full bg-gray-200 flex flex-row shadow-lg pb-6 rounded-xl">
+                <div className="w-1/5 flex flex-col items-center justify-center mx-2">
+                    {
+                        projects.map((p) => (
+                            <div key={p.id} className="h-16 w-full bg-blue-700 flex items-center justify-center shadow-lg mb-2 rounded-lg" onClick={() => setProject(p.id)}>
+                                <p className="cursor-pointer text-green-50">{p.title}</p>
+                            </div>
+                        ))
+                    }
                 </div>
-            </div>
+                <div className="w-4/5">
+                    <div className="bg-gray-200 border-l-4 border-gray-300 h-full">
+                        <ProjectView project={project} />
+                    </div>
+                </div>
 
+            </div>
         </div>
     )
 }

@@ -1,13 +1,22 @@
+import techs from '../json/tech.js'
 
 export default function Techs() {
     return (
-        <div className="h-48 flex flex-col bg-gray-400 justify-center items-center text-white">
-            <p className="mb-4">Tecnologias</p>
-            <div className="h-1/2 w-full flex flex-row items-center justify-around">
-                <p>tech1</p>
-                <p>tech1</p>
-                <p>tech1</p>
-                <p>tech1</p>
+        <div className="h-80 bg-gray-100">
+            <div className="flex justify-center py-10 text-4xl font-bold">
+                <p className="text-green-600">Tecnologias</p>
+            </div>
+            <div className="h-full w-full flex flex-row justify-center">
+                {
+                    techs.map((t) => (
+                        <div className="h-36 w-24 rounded-lg bg-white text-white ml-4 mr-4 flex flex-col justify-center items-center shadow-lg border-2 border-gray-200" key={t.id}>
+                            <img src={process.env.PUBLIC_URL + t.img} alt="react" className="h-16 my-2 " />
+                            <div className="bg-black h-16 w-full flex items-center text-center justify-center rounded-b-lg">
+                                <p>{t.title}</p>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
