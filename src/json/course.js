@@ -51,7 +51,7 @@ const courses = [
         courseId: "N/P",
         duration: "24",
         date: "27/02/2019",
-        img: "img/courses/sql-miriada.png"
+        img: "img/sql-miriada.png"
     }
 ]
 
