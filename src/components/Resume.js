@@ -11,8 +11,8 @@ export default function Resume() {
                 </p>
             </div>
             <div className="w-1/2 bg-blue-300 flex items-center justify-center shadow-lg">
-                <div className="w-40 h-40 rounded-full border-8 border-green-500 flex items-center justify-center shadow-lg">
-                    <p>Aqui va la imagen</p>
+                <div className="w-56 h-56 rounded-full border-8 border-green-500 flex items-center justify-center shadow-lg bg-white">
+                    <img src={"/img/raa.jpg"} alt="raa" className="w-full rounded-full" />
                 </div>
             </div>
         </div>

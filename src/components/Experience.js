@@ -15,12 +15,17 @@ export default function Experience() {
                     </p>
                 </div>
                 <div className="bg-gray-100 w-5/12 flex items-center justify-center mr-8">
-                    <p>Aqui va la img de TS</p>
+                    <div className="border-4 border-green-600 rounded-full h-56 w-56 flex justify-center items-center bg-white shadow-lg">
+                        {/* <img src={process.env.PUBLIC_URL + "/img/jobs/ts.png"} alt="tecnosoft" className="h-3/5" /> */}
+                        <img src={"/img/jobs/ts.png"} alt="tecnosoft" className="h-3/5" />
+                    </div>
                 </div>
             </div>
             <div className="bg-gray-200 flex flex-row justify-around py-10 shadow-lg">
                 <div className="bg-gray-200 w-5/12 flex items-center justify-center">
-                    <p>Aqui va la img del simposium</p>
+                    <div className="border-4 border-green-600 rounded-full h-56 w-56 flex justify-center items-center bg-white shadow-lg">
+                        <img src={"/img/jobs/si.png"} alt="impacta" className="h-3/5" />
+                    </div>
                 </div>
                 <div className="bg-gray-200 w-5/12  mr-8">
                     <p className="md:text-sm text-center mt-2 font-semibold text-xl text-green-600">DESARROLLADOR LARAVEL</p>
@@ -43,13 +48,17 @@ export default function Experience() {
                     </p>
                 </div>
                 <div className="bg-gray-100 w-5/12 flex items-center justify-center ml-8">
-                    <p>Aqui va la img de MiRobotica</p>
+                    <div className="border-4 border-green-600 rounded-full h-56 w-56 flex justify-center items-center bg-white shadow-lg">
+                        <img src={"/img/jobs/mr.png"} alt="mirobotica" className="w-3/5" />
+                    </div>
                 </div>
             </div>
 
             <div className="bg-gray-200 flex flex-row justify-around py-10 shadow-lg">
                 <div className="bg-gray-200 w-5/12 flex items-center justify-center">
-                    <p>Aqui va la img de la utem</p>
+                    <div className="border-4 border-green-600 rounded-full h-56 w-56 flex justify-center items-center bg-white shadow-lg">
+                        <img src={"/img/jobs/utm.png"} alt="utem" className="w-9/12" />
+                    </div>
                 </div>
                 <div className="bg-gray-200 w-5/12 mr-8">
                     <p className="md:text-sm text-center mt-2 font-semibold text-xl text-green-600">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
