@@ -33,7 +33,7 @@ const projects = [
                 img: "img/techs/figma.png"
             },
         ],
-        img: "img/projects/budget.png",
+        img: "img/projects/budget.PNG",
         url: "https://snack.expo.dev/@rigoaa/rigobertoalag-budget-portfolio",
         gitUrl: "https://github.com/rigobertoalag/budget-portfolio"
     },
@@ -78,7 +78,7 @@ const projects = [
                 img: "img/techs/figma.png"
             }
         ],
-        img: "img/projects/checkapp.png",
+        img: "img/projects/checkapp.PNG",
         url: "",
         gitUrl: "https://github.com/rigobertoalag/checkapp-mobile"
     },
@@ -116,7 +116,7 @@ const projects = [
                 img: "img/techs/json.png"
             },
         ],
-        img: "img/projects/laravel-sanctum.png",
+        img: "img/projects/laravel-sanctum.PNG",
         url: "",
         gitUrl: "https://github.com/rigobertoalag/laravel-sanctum-tuto"
     },
