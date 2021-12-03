@@ -10,7 +10,7 @@ export default function Techs() {
                 {
                     techs.map((t) => (
                         <div className="h-36 w-24 rounded-lg bg-white text-white ml-4 mr-4 flex flex-col justify-center items-center shadow-lg border-2 border-gray-200" key={t.id}>
-                            <img src={process.env.PUBLIC_URL + t.img} alt="react" className="h-16 my-2 " />
+                            <img src={t.img} alt="react" className="h-16 my-2 " />
                             <div className="bg-black h-16 w-full flex items-center text-center justify-center rounded-b-lg">
                                 <p>{t.title}</p>
                             </div>
