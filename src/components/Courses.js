@@ -34,7 +34,7 @@ export default function Courses() {
                                 img: c.img
                             })
                         }} key={c.id}>
-                            <img src={process.env.PUBLIC_URL + c.img} alt={c.title} className="w-2/3 my-4 shadow-lg" />
+                            <img src={c.img} alt={c.title} className="w-2/3 my-4 shadow-lg" />
                             <p className="mb-4">{c.title}</p>
                         </div>
                     ))
@@ -74,7 +74,7 @@ export default function Courses() {
                                 <div className="bg-gray-100 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                                     <div className="sm:flex sm:items-start">
                                         <div className="mx-auto flex-shrink-0 flex items-center justify-center h-60 w-80 bg-red-100">
-                                            <img src={process.env.PUBLIC_URL + courseData.img} alt={courseData.title} className="w-full my-2 " />
+                                            <img src={courseData.img} alt={courseData.title} className="w-full my-2 " />
                                         </div>
                                         <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                             <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-green-600">

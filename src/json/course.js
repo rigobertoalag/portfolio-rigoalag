@@ -6,7 +6,7 @@ const courses = [
         courseId: "8b9cda88-6f78-4a30-a45b-49bf9aaba2d1",
         duration: "5.16",
         date: "11/10/2021",
-        img: "img/courses/react.png"
+        img: "img/courses/react.PNG"
     },
     {
         id: 2,
@@ -42,7 +42,7 @@ const courses = [
         courseId: "2016-02-016",
         duration: "25",
         date: "08/09/2016",
-        img: "img/courses/dw-mobile.png"
+        img: "img/courses/dw-mobile.PNG"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const courses = [
         courseId: "N/P",
         duration: "24",
         date: "27/02/2019",
-        img: "img/sql-miriada.png"
+        img: "img/courses/sql-miriada.PNG"
     }
 ]
 
