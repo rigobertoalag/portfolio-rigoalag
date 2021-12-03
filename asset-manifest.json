@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-rigoalag/static/css/main.19ce758a.chunk.css",
-    "main.js": "/portfolio-rigoalag/static/js/main.b4e51b58.chunk.js",
-    "main.js.map": "/portfolio-rigoalag/static/js/main.b4e51b58.chunk.js.map",
+    "main.js": "/portfolio-rigoalag/static/js/main.cb5f6717.chunk.js",
+    "main.js.map": "/portfolio-rigoalag/static/js/main.cb5f6717.chunk.js.map",
     "runtime-main.js": "/portfolio-rigoalag/static/js/runtime-main.02252bf4.js",
     "runtime-main.js.map": "/portfolio-rigoalag/static/js/runtime-main.02252bf4.js.map",
     "static/js/2.4c418e81.chunk.js": "/portfolio-rigoalag/static/js/2.4c418e81.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.02252bf4.js",
     "static/js/2.4c418e81.chunk.js",
     "static/css/main.19ce758a.chunk.css",
-    "static/js/main.b4e51b58.chunk.js"
+    "static/js/main.cb5f6717.chunk.js"
   ]
 }
