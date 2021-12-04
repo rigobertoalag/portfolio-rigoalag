@@ -13,8 +13,8 @@ export default function Portfolio() {
                 <div className="w-1/5 flex flex-col items-center justify-center mx-2">
                     {
                         projects.map((p) => (
-                            <div key={p.id} className="h-16 w-full bg-blue-700 flex items-center justify-center shadow-lg mb-2 rounded-lg" onClick={() => setProject(p.id)}>
-                                <p className="cursor-pointer text-green-50">{p.title}</p>
+                            <div key={p.id} className="h-16 sm:h-14 w-full bg-blue-700 flex items-center justify-center shadow-lg mb-2 rounded-lg" onClick={() => setProject(p.id)}>
+                                <p className="cursor-pointer text-green-50 sm:text-xs sm:mx-2 text-center">{p.title}</p>
                             </div>
                         ))
                     }

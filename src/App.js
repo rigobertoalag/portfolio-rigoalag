@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <div className="h-screen">
+    <div className="">
       <div className="flex h-12 w-full items-center justify-center fixed bg-blue-400 shadow-lg">
         <p className="cursor-pointer text-white hover:text-green-200" onClick={handleTop}>Inicio</p>
         <div className="flex flex-row-reverse w-10/12">
@@ -46,7 +46,7 @@ function App() {
         </div>
       </div>
 
-      <div className="h-3/4 bg-white pt-12" ref={topRef}>
+      <div ref={topRef}>
         <Cover />
       </div>
 
