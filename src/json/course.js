@@ -6,7 +6,7 @@ const courses = [
         courseId: "8b9cda88-6f78-4a30-a45b-49bf9aaba2d1",
         duration: "5.16",
         date: "11/10/2021",
-        img: "img/courses/react.PNG"
+        img: "/img/courses/react.PNG"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const courses = [
         courseId: "UC-fb339592-bc0a-4875-a37a-8ade7602062d",
         duration: "30.5",
         date: "01/07/2021",
-        img: "img/courses/front-global.jpg"
+        img: "/img/courses/front-global.jpg"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const courses = [
         courseId: "UC-fb339592-bc0a-4875-a37a-8ade7602062d",
         duration: "1",
         date: "27/07/2021",
-        img: "img/courses/api-rest-laravel.jpg"
+        img: "/img/courses/api-rest-laravel.jpg"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const courses = [
         courseId: "UC-0YUJBJZX",
         duration: "9",
         date: "09/08/2019",
-        img: "img/courses/plsql.jpg"
+        img: "/img/courses/plsql.jpg"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const courses = [
         courseId: "2016-02-016",
         duration: "25",
         date: "08/09/2016",
-        img: "img/courses/dw-mobile.PNG"
+        img: "/img/courses/dw-mobile.PNG"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const courses = [
         courseId: "N/P",
         duration: "24",
         date: "27/02/2019",
-        img: "img/courses/sql-miriada.PNG"
+        img: "/img/courses/sql-miriada.PNG"
     }
 ]
 

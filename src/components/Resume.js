@@ -5,12 +5,12 @@ export default function Resume() {
         <div>
             <div className="h-80 top-44 absolute w-full flex flex-col justify-around items-center">
                 <div className="h-32 w-32 rounded-full mb-2">
-                    {/* <img src={process.env.PUBLIC_URL + "/img/raa.jpg"} alt="tecnosoft" className="h-32 rounded-full ring-2 ring-indigo-600 shadow-lg" /> */}
-                    <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" />
+                    <img src={process.env.PUBLIC_URL + "/img/raa.jpg"} alt="tecnosoft" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" />
+                    {/* <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" /> */}
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <p className="text-white text-3xl mb-4">Name</p>
-                    <div className="flex flex-row w-full">
+                    <p className="text-white text-2xl mb-4 text-center">Rigoberto Alcantar Aguilar</p>
+                    <div className="flex flex-row justify-center items-center w-full">
                         {
                             social.map((social) => (
                                 <div className="flex flex-col justify-around items-center mr-4" key={social.id}>
@@ -28,7 +28,7 @@ export default function Resume() {
             </div>
 
             <div className="mt-60 bg-black">
-                <p className="text-justify font-extralight mb-4 text-white mx-3">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
+                <p className="text-justify font-extralight mb-4 text-white mx-5">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
                     me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
                     en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
                     actualmente me apasiona el diseño y desarrollo de aplicaciones nativas con React Native

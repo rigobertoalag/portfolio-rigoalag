@@ -1,31 +1,25 @@
-import { useState } from 'react'
-import ProjectView from '../components/ProjectView'
 import projects from '../json/projects.js'
+import Footer from './Footer.js'
 
 export default function Portfolio() {
-    const [project, setProject] = useState(1)
     return (
-        <div className="bg-gray-100 w-full">
-            <div className="flex justify-center py-10 text-4xl font-bold">
-                <p className="text-green-600">Proyectos - Portafolio</p>
-            </div>
-            <div className="w-full bg-gray-200 flex flex-row shadow-lg pb-6 rounded-xl">
-                <div className="w-1/5 flex flex-col items-center justify-center mx-2">
-                    {
-                        projects.map((p) => (
-                            <div key={p.id} className="h-16 sm:h-14 w-full bg-blue-700 flex items-center justify-center shadow-lg mb-2 rounded-lg" onClick={() => setProject(p.id)}>
-                                <p className="cursor-pointer text-green-50 sm:text-xs sm:mx-2 text-center">{p.title}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className="w-4/5">
-                    <div className="bg-gray-200 border-l-4 border-gray-300 h-full">
-                        <ProjectView project={project} />
+        <div className='flex flex-col bg-black justify-center items-center mt-4'>
+            <p className='text-2xl font-extralight mb-2'>Proyectos</p>
+            {
+                projects.map((p) => (
+                    <div className='w-72 border-2 rounded border-gray-900 my-2' key={p.id}>
+                        <div className='w-full h-full'>
+                            <img src={process.env.PUBLIC_URL + p.img} alt={p.title} className="object-contain" />
+                        </div>
+                        <div className='w-full my-1 p-2'>
+                            <p className="text-xs text-indigo-600 mt-2 ml-1 italic">{p.techs}</p>
+                            <p className='text-2xl mb-1 ml-1 font-extralight'>{p.title}</p>
+                            <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.description}</p>
+                        </div>
                     </div>
-                </div>
-
-            </div>
+                ))
+            }
+            <Footer />
         </div>
     )
 }
