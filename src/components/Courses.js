@@ -20,13 +20,13 @@ export default function Courses() {
         <div className='flex flex-col bg-black justify-center items-center mt-4'>
             <p className='text-2xl font-extralight mb-4'>Educación</p>
 
-            <div className="w-72 p-2 font-extralight mb-5">
-                <p className="text-xs">09/2015 - 04/2019</p>
-                <p className="text-indigo-600">Ingenieria en Tecnologias de la información</p>
-                <p className="text-gray-400 text-sm italic">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
+            <div className="w-72 sm:w-80 p-2 font-light mb-5">
+                <p className="text-sm">09/2015 - 04/2019</p>
+                <p className="text-indigo-500 font-semibold">Ingenieria en Tecnologias de la información</p>
+                <p className="text-gray-200 text-sm italic">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
                 {/* <p className="text-gray-200 text-justify">{e.description}</p> */}
 
-                <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2"></div>
+                <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2 sm:mt-6"></div>
             </div>
 
             <p className='text-2xl font-semibold mb-4'>Cursos en linea</p>
@@ -47,7 +47,7 @@ export default function Courses() {
                         }} key={c.id}>
                             {/* <img src={c.img} alt={c.title} className="w-2/3 my-4 shadow-lg" /> */}
                             <img src={process.env.PUBLIC_URL + c.img} alt={c.title} className="object-contain" />
-                            <p className="p-4 text-sm font-extralight">{c.title}</p>
+                            <p className="p-4 text-sm font-light">{c.title}</p>
                         </div>
                     ))
                 }
