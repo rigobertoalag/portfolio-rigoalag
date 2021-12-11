@@ -19,6 +19,15 @@ const projects = [
     },
     {
         id: 3,
+        title: "Técnica Pomodoro",
+        description: "Aplicacion web responsiva donde se recrea la forma Pomodoro para el estudio efectivo o concentracion al realizar tareas, se desarrollo con React usando Hooks",
+        techs: "React JS",
+        img: "/img/projects/pomodoro.PNG",
+        url: "",
+        gitUrl: "https://rigobertoalag.github.io/pomodoro-portfolio/"
+    },
+    {
+        id: 4,
         title: "REST API con Laravel y Sanctum",
         description: "REST API desarrollada que sirve como backend para App Checar, en este aplicativo podemos registrarnos, iniciar sesion y almacenar valores relacionados con la mencionada aplicacion, basado en tokens y con el sistema de autenticacion de Laravel-Sacntum se desarrollo con fines practicos, de momento se encuentra alojada en Heroku siguiendo la documentacion en el repositorio podra realizar y probar algunas consultas a la API",
         techs: "Laravel",
