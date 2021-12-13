@@ -35,15 +35,6 @@ const projects = [
         url: "",
         gitUrl: "https://github.com/rigobertoalag/laravel-sanctum-tuto"
     },
-    // {
-    //     id: 4,
-    //     title: "Ver mas proyectos",
-    //     description: "Te invito a revisar mis repositorios en GitHub dando click al siguiente link.",
-    //     techs: "GitHub",
-    //     img: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-    //     url: "",
-    //     gitUrl: "https://github.com/rigobertoalag/"
-    // }
 ]
 
 export default projects;
