@@ -8,7 +8,8 @@ const projects = [
         techs: "React Native",
         img: "/img/projects/budget.PNG",
         url: "https://snack.expo.dev/@rigoaa/rigobertoalag-budget-portfolio",
-        gitUrl: "https://github.com/rigobertoalag/budget-portfolio"
+        gitUrl: "https://github.com/rigobertoalag/budget-portfolio",
+        preview: true
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ const projects = [
         techs: "React Native",
         img: "/img/projects/checkapp.PNG",
         url: "",
-        gitUrl: "https://github.com/rigobertoalag/checkapp-mobile"
+        gitUrl: "https://github.com/rigobertoalag/checkapp-mobile",
+        preview: false
     },
     {
         id: 3,
@@ -30,7 +32,8 @@ const projects = [
         techs: "React JS",
         img: "/img/projects/pomodoro.PNG",
         url: "",
-        gitUrl: "https://rigobertoalag.github.io/pomodoro-portfolio/"
+        gitUrl: "https://rigobertoalag.github.io/pomodoro-portfolio/",
+        preview: false
     },
     {
         id: 4,
@@ -41,7 +44,8 @@ const projects = [
         techs: "Laravel",
         img: "/img/projects/laravel-sanctum.PNG",
         url: "",
-        gitUrl: "https://github.com/rigobertoalag/laravel-sanctum-tuto"
+        gitUrl: "https://github.com/rigobertoalag/laravel-sanctum-tuto",
+        preview: false
     },
 ]
 
