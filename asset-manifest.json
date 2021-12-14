@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-rigoalag/static/css/main.03db4a42.chunk.css",
-    "main.js": "/portfolio-rigoalag/static/js/main.fd963834.chunk.js",
-    "main.js.map": "/portfolio-rigoalag/static/js/main.fd963834.chunk.js.map",
+    "main.css": "/portfolio-rigoalag/static/css/main.4f695210.chunk.css",
+    "main.js": "/portfolio-rigoalag/static/js/main.fe307956.chunk.js",
+    "main.js.map": "/portfolio-rigoalag/static/js/main.fe307956.chunk.js.map",
     "runtime-main.js": "/portfolio-rigoalag/static/js/runtime-main.02252bf4.js",
     "runtime-main.js.map": "/portfolio-rigoalag/static/js/runtime-main.02252bf4.js.map",
     "static/js/2.5b8ca408.chunk.js": "/portfolio-rigoalag/static/js/2.5b8ca408.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.7e640128.chunk.js": "/portfolio-rigoalag/static/js/3.7e640128.chunk.js",
     "static/js/3.7e640128.chunk.js.map": "/portfolio-rigoalag/static/js/3.7e640128.chunk.js.map",
     "index.html": "/portfolio-rigoalag/index.html",
-    "static/css/main.03db4a42.chunk.css.map": "/portfolio-rigoalag/static/css/main.03db4a42.chunk.css.map",
+    "static/css/main.4f695210.chunk.css.map": "/portfolio-rigoalag/static/css/main.4f695210.chunk.css.map",
     "static/js/2.5b8ca408.chunk.js.LICENSE.txt": "/portfolio-rigoalag/static/js/2.5b8ca408.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.02252bf4.js",
     "static/js/2.5b8ca408.chunk.js",
-    "static/css/main.03db4a42.chunk.css",
-    "static/js/main.fd963834.chunk.js"
+    "static/css/main.4f695210.chunk.css",
+    "static/js/main.fe307956.chunk.js"
   ]
 }
