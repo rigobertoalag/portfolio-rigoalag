@@ -8,7 +8,7 @@ export default function Experience() {
 
             {
                 expertise.map((e) => (
-                    <div className="w-72 sm:w-80 md:80 p-2 md:w-96 font-light mb-5 border-2" key={e.id}>
+                    <div className="w-72 sm:w-80 md:80 p-2 md:w-96 font-light mb-5" key={e.id}>
                         <p className="text-sm md:text-base">{e.date}</p>
                         <p className="text-indigo-500 md:text-base font-semibold">{e.job}</p>
                         <p className="text-gray-300 text-sm md:text-base italic">@{e.company}</p>
