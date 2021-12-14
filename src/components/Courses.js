@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import courses from '../json/course.js'
 import Footer from './Footer.js'
 
-export default function Courses() {
+export default function Courses({lenguage}) {
     const [open, setOpen] = useState(false)
     const [courseData, setCourseData] = useState({
         title: null,
@@ -18,18 +18,18 @@ export default function Courses() {
 
     return (
         <div className='flex flex-col bg-black justify-center items-center mt-4'>
-            <p className='text-2xl font-extralight mb-4'>Educación</p>
+            <p className='text-2xl font-extralight mb-4'>{!lenguage ? 'Educación' : 'Education'}</p>
 
             <div className="w-72 sm:w-80 md:w-96 p-2 font-light mb-5">
                 <p className="text-sm md:text-base">09/2015 - 04/2019</p>
-                <p className="text-indigo-500 font-semibold md:text-base">Ingenieria en Tecnologias de la información</p>
+                <p className="text-indigo-500 font-semibold md:text-base">{!lenguage ? 'Ingenieria en Tecnologias de la información' : 'IT Engenier'}</p>
                 <p className="text-gray-200 text-sm italic md:text-base">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
                 {/* <p className="text-gray-200 text-justify">{e.description}</p> */}
 
                 <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2 sm:mt-6"></div>
             </div>
 
-            <p className='text-2xl font-semibold mb-4'>Cursos en linea</p>
+            <p className='text-2xl font-semibold mb-4'>{!lenguage ? 'Cursos en linea' : 'Online courses'}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-3 place-items-stretch mb-8 w-72 md:w-10/12 md:ml-50">
                 {

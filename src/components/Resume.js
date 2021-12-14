@@ -1,6 +1,6 @@
 import social from "../json/social.js"
 
-export default function Resume() {
+export default function Resume({ lenguage }) {
     return (
         <div>
             <div className="h-80 sm:h-96 md:top-96 sm:top-36 top-44 absolute lg:relative lg:top-8 w-full flex flex-col justify-around items-center">
@@ -9,7 +9,7 @@ export default function Resume() {
                     {/* <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" /> */}
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <p className="text-white text-2xl sm:text-3xl mb-4 text-center">Rigoberto Alcantar Aguilar</p>
+                    <p className="text-white text-2xl sm:text-3xl mb-4 sm:mb-4 text-center">Rigoberto Alcantar Aguilar</p>
                     <div className="flex flex-row justify-center items-center w-full">
                         {
                             social.map((social) => (
@@ -23,43 +23,25 @@ export default function Resume() {
                             ))
                         }
                     </div>
-                    <button className="bg-indigo-500 p-3 sm:p-3 sm:text-base rounded-lg text-white my-2 sm:my-4">Curriculum</button>
+                    {
+
+                    }
                 </div>
             </div>
 
-            <div className="mt-60 md:mt-64 sm:mt-72 lg:mt-16 bg-black">
-                <p className="text-justify md:text-lg font-light mb-4 md:mb-7 text-white mx-5 md:mx-32">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
-                    me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
-                    en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
-                    actualmente me apasiona el diseño y desarrollo de aplicaciones nativas con React Native
-                    y el desarrollo web con React.js.
-                </p>
+            <div className="mt-60 md:mt-64 sm:mt-64 lg:mt-16 bg-black">
+                {
+                    lenguage ? (<p className="text-justify md:text-lg font-light mb-4 md:mb-7 text-white mx-5 md:mx-32 sm:mt-10">Engineer in information technology and communication in the computer systems area, I specialize in the development of software for web and mobile phones, I have experience in both front-end and back-end development and extensive knowledge in SQL databases, currently I am passionate about the design and development of native applications with React Native and the web development with React.js.</p>)
+                        :
+                        (<p className="text-justify md:text-lg font-light mb-4 md:mb-7 text-white mx-5 md:mx-32">
+                            Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
+                            me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
+                            en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
+                            actualmente me apasiona el diseño y desarrollo de aplicaciones nativas con React Native
+                            y el desarrollo web con React.js.
+                        </p>)
+                }
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-        // <div className="w-full flex flex-row">
-        //     <div className="w-1/2 h-5/6 bg-gray-100 flex items-center justify-center flex-col py-10">
-        //         <p className="font-sans mb-4 mt-4 text-4xl text-green-600 font-bold">Resúmen</p>
-        //         <p className="w-4/5 text-justify mb-4 text-green-900">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
-        //             me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
-        //             en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
-        //             actualmente me apasiona el diseño y desarrollo de aplicaciones nativas con React Native
-        //             y el desarrollo web con React.js.
-        //         </p>
-        //     </div>
-        //     <div className="w-1/2 bg-blue-300 flex items-center justify-center shadow-lg">
-        //         <div className="w-56 h-56 rounded-full border-8 border-green-500 flex items-center justify-center shadow-lg bg-white">
-        //             <img src={"img/raa.jpg"} alt="raa" className="w-full rounded-full" />
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
