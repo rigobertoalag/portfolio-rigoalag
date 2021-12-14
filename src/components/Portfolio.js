@@ -5,7 +5,7 @@ export default function Portfolio() {
     return (
         <div className='flex flex-col  bg-black justify-center items-center mt-4'>
             <p className='text-2xl sm:text-3xl font-extralight mb-2'>Proyectos</p>
-            <div className='grid grid-cols-2 gap-4'>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4'>
                 {
                     projects.map((p) => (
                         <div className='w-72 sm:w-80 md:w-80 border-2 rounded border-gray-800 my-2' key={p.id}>
