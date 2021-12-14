@@ -8,11 +8,11 @@ export default function Experience() {
 
             {
                 expertise.map((e) => (
-                    <div className="w-72 sm:w-80 p-2 font-light mb-5" key={e.id}>
-                        <p className="text-sm">{e.date}</p>
-                        <p className="text-indigo-500 font-semibold">{e.job}</p>
-                        <p className="text-gray-300 text-sm italic">@{e.company}</p>
-                        <p className="text-gray-100 text-justify">{e.description}</p>
+                    <div className="w-72 sm:w-80 md:80 p-2 md:w-96 font-light mb-5 border-2" key={e.id}>
+                        <p className="text-sm md:text-base">{e.date}</p>
+                        <p className="text-indigo-500 md:text-base font-semibold">{e.job}</p>
+                        <p className="text-gray-300 text-sm md:text-base italic">@{e.company}</p>
+                        <p className="text-gray-100 md:text-base text-justify">{e.description}</p>
 
                         <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2"></div>
                     </div>

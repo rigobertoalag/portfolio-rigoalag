@@ -3,9 +3,9 @@ import social from "../json/social.js"
 export default function Resume() {
     return (
         <div>
-            <div className="h-80 sm:h-96 sm:top-36 top-44 absolute w-full flex flex-col justify-around items-center">
-                <div className="h-32 w-32 sm:h-48 sm:w-48 rounded-full mb-2">
-                    <img src={process.env.PUBLIC_URL + "/img/raa.jpg"} alt="tecnosoft" className="h-32 sm:h-48 rounded-full ring-4 ring-indigo-600 shadow-lg" />
+            <div className="h-80 sm:h-96 md:top-96 sm:top-36 top-44 absolute w-full flex flex-col justify-around items-center">
+                <div className="h-32 w-32 sm:h-48 sm:w-48 md:h-60 md:w-48 rounded-full mb-2 md:mb-4">
+                    <img src={process.env.PUBLIC_URL + "/img/ra.jpg"} alt="raa" className="h-32 sm:h-48 rounded-full ring-4 ring-indigo-600 shadow-lg" />
                     {/* <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" /> */}
                 </div>
                 <div className="flex flex-col justify-center items-center">
@@ -15,20 +15,20 @@ export default function Resume() {
                             social.map((social) => (
                                 <div className="flex flex-col justify-around items-center mr-4" key={social.id}>
                                     <a href={social.link} target="_blank" rel="noreferrer" className="flex flex-col justify-center items-center">
-                                        <img src={process.env.PUBLIC_URL + social.icon} alt={social.name} className="h-7 w-7 sm:h-9 sm:w-9" />
+                                        <img src={process.env.PUBLIC_URL + social.icon} alt={social.name} className="h-8 w-8 md:h-10 md:w-10 sm:h-9 sm:w-9" />
                                         {/* <img src={social.icon} alt={social.name} className="h-7 w-7" /> */}
-                                        <p className="text-white text-sm text-center font-extralight">{social.name}</p>
+                                        <p className="text-white text-sm md:text-base text-center font-extralight">{social.name}</p>
                                     </a>
                                 </div>
                             ))
                         }
                     </div>
-                    <button className="bg-indigo-500 p-3 sm:p-3 text-sm sm:text-base rounded-lg text-white my-2 sm:my-4">Curriculum</button>
+                    <button className="bg-indigo-500 p-3 sm:p-3 sm:text-base rounded-lg text-white my-2 sm:my-4">Curriculum</button>
                 </div>
             </div>
 
-            <div className="mt-60 sm:mt-72 bg-black">
-                <p className="text-justify font-light mb-4 text-white mx-5">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
+            <div className="mt-60 md:mt-64 sm:mt-72 bg-black">
+                <p className="text-justify md:text-lg font-light mb-4 md:mb-7 text-white mx-5 md:mx-32">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
                     me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
                     en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
                     actualmente me apasiona el diseño y desarrollo de aplicaciones nativas con React Native
