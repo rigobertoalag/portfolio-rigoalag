@@ -5,7 +5,7 @@ export default function Resume({ lenguage }) {
         <div>
             <div className="h-80 sm:h-96 md:top-96 sm:top-36 top-44 absolute lg:relative lg:top-8 w-full flex flex-col justify-around items-center">
                 <div className="h-32 w-32 sm:h-48 sm:w-48 md:h-60 md:w-48 rounded-full mb-2 md:mb-4">
-                    <img src={process.env.PUBLIC_URL + "/img/ra.jpg"} alt="raa" className="h-32 sm:h-48 rounded-full ring-4 ring-indigo-600 shadow-lg" />
+                    <img src={process.env.PUBLIC_URL + "/img/raa.jpg"} alt="raa" className="h-32 sm:h-48 rounded-full ring-4 ring-indigo-600 shadow-lg" />
                     {/* <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" /> */}
                 </div>
                 <div className="flex flex-col justify-center items-center">
