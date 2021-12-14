@@ -3,7 +3,7 @@ import social from "../json/social.js"
 export default function Resume() {
     return (
         <div>
-            <div className="h-80 sm:h-96 md:top-96 sm:top-36 top-44 absolute w-full flex flex-col justify-around items-center">
+            <div className="h-80 sm:h-96 md:top-96 sm:top-36 top-44 absolute lg:relative lg:top-8 w-full flex flex-col justify-around items-center">
                 <div className="h-32 w-32 sm:h-48 sm:w-48 md:h-60 md:w-48 rounded-full mb-2 md:mb-4">
                     <img src={process.env.PUBLIC_URL + "/img/raa.jpg"} alt="raa" className="h-32 sm:h-48 rounded-full ring-4 ring-indigo-600 shadow-lg" />
                     {/* <img src="/img/raa.jpg" alt="riaa" className="h-32 rounded-full ring-4 ring-indigo-600 shadow-lg" /> */}
@@ -27,7 +27,7 @@ export default function Resume() {
                 </div>
             </div>
 
-            <div className="mt-60 md:mt-64 sm:mt-72 bg-black">
+            <div className="mt-60 md:mt-64 sm:mt-72 lg:mt-16 bg-black">
                 <p className="text-justify md:text-lg font-light mb-4 md:mb-7 text-white mx-5 md:mx-32">Ingeniero en tecnologias de la información y comunicaión área de sistemas informáticos,
                     me especializo en el desarrollo de software para web y móviles, tengo experiencia tanto
                     en desarrollo front-end como back-end y un amplio conocimiento en bases de datos SQL,
