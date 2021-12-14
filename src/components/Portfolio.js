@@ -1,10 +1,10 @@
 import projects from '../json/projects.js'
 import Footer from './Footer.js'
 
-export default function Portfolio() {
+export default function Portfolio({ lenguage }) {
     return (
         <div className='flex flex-col  bg-black justify-center items-center mt-4'>
-            <p className='text-2xl sm:text-3xl font-extralight mb-2'>Proyectos</p>
+            <p className='text-2xl sm:text-3xl font-extralight mb-2'>{!lenguage ? 'Proyectos' : 'Projects'}</p>
             <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4'>
                 {
                     projects.map((p) => (
@@ -14,8 +14,8 @@ export default function Portfolio() {
                             </div>
                             <div className='w-full my-1 p-2'>
                                 <p className="text-xs text-indigo-500 mt-2 ml-1 italic">{p.techs}</p>
-                                <p className='text-2xl mb-1 ml-1 font-light'>{p.title}</p>
-                                <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.description}</p>
+                                {!lenguage ? <p className='text-2xl mb-1 ml-1 font-light'>{p.titleES}</p> : <p className='text-2xl mb-1 ml-1 font-light'>{p.titleEN}</p>}
+                                {!lenguage ? <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.descriptionES}</p> : <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.descriptionEN}</p>}
                             </div>
                         </div>
                     ))
