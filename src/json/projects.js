@@ -31,9 +31,9 @@ const projects = [
         descriptionEN: "Responsive web application where the Pomodoro form is recreated for effective study or concentration when performing tasks, it was developed with React using Hooks",
         techs: "React JS",
         img: "/img/projects/pomodoro.PNG",
-        url: "",
-        gitUrl: "https://rigobertoalag.github.io/pomodoro-portfolio/",
-        preview: false
+        url: "https://rigobertoalag.github.io/pomodoro-portfolio/",
+        gitUrl: "https://github.com/rigobertoalag/pomodoro-portfolio",
+        preview: true
     },
     {
         id: 4,
