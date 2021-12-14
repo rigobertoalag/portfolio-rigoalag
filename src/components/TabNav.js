@@ -22,11 +22,11 @@ export default function TabNav() {
 
     return (
         <div className="bg-black mt-4 h-52">
-            <div className="flex flex-row justify-between overflow-x-auto mx-2">
-                <p className={`py-2 px-3 text-white text-sm font-extralight ${isFocus === 'project' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('project')}>Proyectos</p>
-                <p className={`py-2 px-3 text-white text-sm font-extralight ${isFocus === 'expertise' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('expertise')}>Experiencia</p>
-                <p className={`py-2 px-3 text-white text-sm font-extralight ${isFocus === 'education' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('education')}>Educación</p>
-                <p className={`py-2 px-3 text-white text-sm font-extralight ${isFocus === 'contact' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('contact')}>Contacto</p>
+            <div className="flex flex-row justify-between md:justify-around overflow-x-auto mx-2">
+                <p className={`py-2 px-3 text-white text-sm md:text-base font-extralight ${isFocus === 'project' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('project')}>Proyectos</p>
+                <p className={`py-2 px-3 text-white text-sm md:text-base font-extralight ${isFocus === 'expertise' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('expertise')}>Experiencia</p>
+                <p className={`py-2 px-3 text-white text-sm md:text-base font-extralight ${isFocus === 'education' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('education')}>Educación</p>
+                <p className={`py-2 px-3 text-white text-sm md:text-base font-extralight ${isFocus === 'contact' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('contact')}>Contacto</p>
             </div>
 
             <div className='mt-1 text-white'>
