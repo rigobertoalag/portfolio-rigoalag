@@ -38,7 +38,7 @@ const projects = [
     {
         id: 4,
         titleES: "REST API con Laravel y Sanctum",
-        titleEN: "EN REST API with Laravel and Sanctum",
+        titleEN: "REST API with Laravel and Sanctum",
         descriptionES: "REST API desarrollada que sirve como backend para App Checar, en este aplicativo podemos registrarnos, iniciar sesion y almacenar valores relacionados con la mencionada aplicacion, basado en tokens y con el sistema de autenticacion de Laravel-Sacntum se desarrollo con fines practicos, de momento se encuentra alojada en Heroku siguiendo la documentacion en el repositorio podra realizar y probar algunas consultas a la API",
         descriptionEN: "REST API developed that serves as a backend for App Check, in this application we can register, log in and store values ​​related to the aforementioned application, based on tokens and with the Laravel-Sacntum authentication system, it was developed for practical purposes. It is hosted on Heroku by following the documentation in the repository, you will be able to perform and test some queries to the API",
         techs: "Laravel",

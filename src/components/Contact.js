@@ -3,7 +3,7 @@ import Footer from './Footer.js'
 export default function Contact({lenguage}) {
     return (
         <div className='flex flex-col bg-black justify-center items-center py-4'>
-            <p className='text-2xl font-extralight mb-4'>{!lenguage ? 'Contacto' : 'Contact'}</p>
+            <p className='text-2xl font-extralight mb-4 lg:text-4xl'>{!lenguage ? 'Contacto' : 'Contact'}</p>
             <div className="flex flex-row justify-between text-center md:mb-16">
                 <div className="flex flex-col justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -21,12 +21,12 @@ export default function TabNav({lenguage}) {
     }
 
     return (
-        <div className="bg-black mt-4 h-52">
-            <div className="flex flex-row justify-between md:justify-around overflow-x-auto mx-2">
-                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight ${isFocus === 'project' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('project')}>{!lenguage ? 'Proyectos' : 'Projects'}</p>
-                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight ${isFocus === 'expertise' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('expertise')}>{!lenguage ? 'Experiencia' : 'Experience'}</p>
-                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight ${isFocus === 'education' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('education')}>{!lenguage ? 'Educacion' : 'Education'}</p>
-                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight ${isFocus === 'contact' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('contact')}>{!lenguage ? 'Contacto' : 'Contact'}</p>
+        <div className="bg-black mt-4 h-52 lg:mt-0">
+            <div className="flex flex-row justify-between md:justify-around overflow-x-auto mx-2 lg:mx-0">
+                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight lg:text-2xl ${isFocus === 'project' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('project')}>{!lenguage ? 'Proyectos' : 'Projects'}</p>
+                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight lg:text-2xl ${isFocus === 'expertise' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('expertise')}>{!lenguage ? 'Experiencia' : 'Experience'}</p>
+                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight lg:text-2xl ${isFocus === 'education' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('education')}>{!lenguage ? 'Educacion' : 'Education'}</p>
+                <p className={`py-2 px-3 text-white hover:text-indigo-400 text-sm md:text-base cursor-pointer font-extralight lg:text-2xl ${isFocus === 'contact' ? "border-b-2 border-indigo-600" : null} `} onClick={() => setIsFocus('contact')}>{!lenguage ? 'Contacto' : 'Contact'}</p>
             </div>
 
             <div className='mt-1 text-white'>

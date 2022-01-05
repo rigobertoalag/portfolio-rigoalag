@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import courses from '../json/course.js'
 import Footer from './Footer.js'
 
-export default function Courses({lenguage}) {
+export default function Courses({ lenguage }) {
     const [open, setOpen] = useState(false)
     const [courseData, setCourseData] = useState({
         title: null,
@@ -18,16 +18,22 @@ export default function Courses({lenguage}) {
 
     return (
         <div className='flex flex-col bg-black justify-center items-center mt-4'>
-            <p className='text-2xl font-extralight mb-4'>{!lenguage ? 'Educación' : 'Education'}</p>
+            <p className='text-2xl font-extralight mb-4 lg:text-4xl lg:mb-8'>{!lenguage ? 'Educación' : 'Education'}</p>
 
-            <div className="w-72 sm:w-80 md:w-96 p-2 font-light mb-5">
-                <p className="text-sm md:text-base">09/2015 - 04/2019</p>
-                <p className="text-indigo-500 font-semibold md:text-base">{!lenguage ? 'Ingenieria en Tecnologias de la información' : 'IT Engenier'}</p>
-                <p className="text-gray-200 text-sm italic md:text-base">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
-                {/* <p className="text-gray-200 text-justify">{e.description}</p> */}
+            <div className="w-72 sm:w-80 md:w-96 p-2 font-light mb-5 flex flex-row">
+                <div>
+                    <img src={process.env.PUBLIC_URL + '/img/school3.png'} alt="school" className="lg:w-25 lg:h-25" />
+                </div>
+                <div>
+                    <p className="text-sm md:text-base lg:text-lg">09/2015 - 04/2019</p>
+                    <p className="text-indigo-500 font-semibold md:text-base lg:text-lg">{!lenguage ? 'Ingenieria en Tecnologias de la información' : 'IT Engenier'}</p>
+                    <p className="text-gray-200 text-sm italic md:text-base lg:text-lg">UNIVERSIDAD TECNOLOGICA DE MANZANILLO</p>
+                    {/* <p className="text-gray-200 text-justify">{e.description}</p> */}
 
-                <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2 sm:mt-6"></div>
+                </div>
+                
             </div>
+            <div className="border-2 rounded-xl w-56 border-indigo-600 mt-2 sm:mt-6 lg:mt-0 lg:mb-10"></div>
 
             <p className='text-2xl font-semibold mb-4'>{!lenguage ? 'Cursos en linea' : 'Online courses'}</p>
 

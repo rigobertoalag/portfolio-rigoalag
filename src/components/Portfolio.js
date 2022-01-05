@@ -7,11 +7,11 @@ export default function Portfolio({ lenguage }) {
 
     return (
         <div className='flex flex-col  bg-black justify-center items-center mt-4'>
-            <p className='text-2xl sm:text-3xl font-extralight mb-2'>{!lenguage ? 'Proyectos' : 'Projects'}</p>
-            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4'>
+            <p className='text-2xl sm:text-3xl font-extralight mb-2 lg:text-4xl lg:mb-8'>{!lenguage ? 'Proyectos' : 'Projects'}</p>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 lg:grid-cols-3'>
                 {
                     projects.map((p) => (
-                        <div className='w-72 sm:w-80 md:w-80 border-2 rounded border-gray-800 my-2' key={p.id}>
+                        <div className='w-72 sm:w-80 md:w-80 lg:w-96 border-2 rounded border-gray-800 my-2' key={p.id}>
                             <div className='w-full'>
                                 {
                                     !isClick ? (<img src={process.env.PUBLIC_URL + p.img} alt={p.title} className="object-contain" onClick={() => setIsClick(true)} />) : (
@@ -31,9 +31,9 @@ export default function Portfolio({ lenguage }) {
                                 }
                             </div>
                             <div className='w-full my-1 p-2'>
-                                <p className="text-xs text-indigo-500 mt-2 ml-1 italic">{p.techs}</p>
-                                {!lenguage ? <p className='text-2xl mb-1 ml-1 font-light'>{p.titleES}</p> : <p className='text-2xl mb-1 ml-1 font-light'>{p.titleEN}</p>}
-                                {!lenguage ? <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.descriptionES}</p> : <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.descriptionEN}</p>}
+                                <p className="text-xs text-indigo-500 mt-2 ml-1 italic lg:text-lg">{p.techs}</p>
+                                {!lenguage ? <p className='text-2xl mb-1 ml-1 font-light lg:text-3xl lg:mb-4'>{p.titleES}</p> : <p className='text-2xl mb-1 ml-1 font-light lg:text-3xl lg:mb-4'>{p.titleEN}</p>}
+                                {!lenguage ? <p className='text-sm text-gray-300 font-extralight text-justify mx-1 lg:text-base'>{p.descriptionES}</p> : <p className='text-sm text-gray-300 font-extralight text-justify mx-1'>{p.descriptionEN}</p>}
                             </div>
                         </div>
                     ))

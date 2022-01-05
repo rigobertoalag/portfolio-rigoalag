@@ -9,11 +9,11 @@ function App() {
     <div className="bg-black h-full w-full">
       <Cover />
       {
-        translate ? <button onClick={() => setTranslate(false)} className='text-white absolute top-4 ml-4'><img
+        translate ? <button onClick={() => setTranslate(false)} className='text-white absolute top-4 ml-4 lg:fixed'><img
           alt="ES"
           src="http://purecatamphetamine.github.io/country-flag-icons/3x2/MX.svg"
         />ES</button> :
-          <button onClick={() => setTranslate(true)} className='text-white absolute top-4 ml-4'>
+          <button onClick={() => setTranslate(true)} className='text-white absolute top-4 ml-4 lg:fixed'>
             <img
               alt="EN"
               src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"
