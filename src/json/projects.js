@@ -47,6 +47,18 @@ const projects = [
         gitUrl: "https://github.com/rigobertoalag/laravel-sanctum-tuto",
         preview: false
     },
+    {
+        id: 5,
+        titleES: "Pregunta2",
+        titleEN: "Mini game - Pregunta2",
+        descriptionES: "Mini juego de preguntas realizada con React.js, desarrollada desde cero la aplicación cuenta con más de 100 preguntas con 3 posibles respuestas, una de ellas la correcta.",
+        descriptionEN: "Mini quiz game made with React.js, developed from scratch, the application has more than 100 questions with 3 possible answers, one of them the correct one.",
+        techs: "React.js",
+        img: "/img/projects/preguntados.PNG",
+        url: "https://rigobertoalag.github.io/appcultura/",
+        gitUrl: "https://github.com/rigobertoalag/appcultura",
+        preview: true
+    }
 ]
 
 export default projects;
